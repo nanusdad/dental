@@ -1,0 +1,17 @@
+/* CSS declarations go here */
+
+.tabform {
+	padding-top: 25px;
+}
+
+.row-main {
+	padding-bottom: 30px;
+}
+
+.consultation-tab {
+	width: 50%;
+}
+
+.procedure-tab {
+	width: 50%;
+}

@@ -1,0 +1,250 @@
+<body>
+<div class="container"><h1>CMC Chittor Dental Clinic</h1></div>
+<hr>
+<div id="exTab1" class="container"> 
+  <ul  class="nav nav-pills">
+    <li class="active">
+      <a  href="#home_tab" data-toggle="tab">Home</a>
+    </li>
+    <li>
+      <a href="#consultation_tab" data-toggle="tab">Consultation Status</a>
+    </li>
+    <li>
+      <a href="#procedure_tab" data-toggle="tab">Procedure Register</a>
+    </li>
+    <li>
+      <a href="#consultation_list_tab" data-toggle="tab">Consultation List</a>
+    </li>
+    <li>
+      <a href="#procedure_list_tab" data-toogle="tab">Procedure List</a>
+    </li>
+     <li>
+      <a href="#phonenumbers_list_tab" data-toogle="tab">Phone Numbers List</a>
+    </li>
+    <li><a href="#help_tab" data-toggle="tab">Help</a>
+    </li>
+  </ul>
+
+      <div class="tab-content clearfix">
+        <div class="tab-pane active" id="home_tab">
+          {{> homeTab}}
+        </div>
+        <div class="tab-pane" id="consultation_tab">
+          {{> consultationTab}}
+        </div>
+        <div class="tab-pane" id="procedure_tab">
+          {{> procedureTab}}
+        </div>
+        <div class="tab-pane" id="consultation_list_tab">
+          {{> consultationlistTab}}
+        </div>
+        <div class="tab-pane" id="procedure_list_tab">
+          {{> procedurelistTab}}
+        </div>
+        <div class="tab-pane" id="phonenumbers_list_tab">
+          {{> phonenumberlistTab}}
+        </div>
+        <div class="tab-pane" id="help_tab">
+          {{> helpTab}}
+        </div>
+        
+      </div>
+  </div>
+
+
+
+</body>
+
+<template name="homeTab">
+  <div class="tabform">
+    <div class="row row-main">
+      <div class="col-md-6">
+        <a href="#consultation_tab" data-toggle="tab">
+          <button class="btn btn-primary btn-lg">Consultation Status</button>
+          </a>
+        </div>
+      <div class="col-md-6">
+        <a href="#procedure_tab" data-toggle="tab">
+          <button class="btn btn-main btn-primary btn-lg">Procedure Register</button>
+        </a>
+      </div>
+    </div>
+    <div class="row row-main">
+      <div class="col-md-6">
+        <a href="#consultation_list_tab" data-toggle="tab">
+          <button class="btn btn-primary btn-lg">Consultation List</button>
+        </a>
+      </div>
+       <div class="col-md-6">
+        <a href="#procedure_list_tab" data-toggle="tab">
+          <button class="btn btn-primary btn-lg">Procedure List</button>
+        </a>
+      </div>
+    </div>
+    <div class="row row-main"> 
+      <div class="col-md-12">
+        <a href="#phonenumbers_list_tab" data-toggle="tab">
+          <button class="btn btn-primary btn-lg">Phone Numbers List</button>
+        </a>
+      </div> 
+    </div>
+  </div>
+
+</template>
+
+<template name="patientsTab">
+
+  <div class="tabform">
+      <form class="form-inline" role="form">
+          <div class="form-group">
+              <label class="sr-only" for="inputEmail">Email</label>
+              <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+          </div>
+          <div class="form-group">
+              <label class="sr-only" for="inputPassword">Password</label>
+              <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+          </div>
+          <div class="checkbox">
+              <label><input type="checkbox"> Remember me</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Login</button>
+      </form>
+      <br>
+      <div class="alert alert-info">
+          <a href="#" class="close" data-dismiss="alert">×</a>
+          <strong>Note:</strong> Notes, go here - if needed.
+      </div>
+  </div>
+</template>
+
+<template name="procedureTab">
+
+  <div class="tabform procedure-tab">
+    <form class="form-horizontal">
+      <div class="form-group">
+        <label for="room_no" class="col-sm-2 control-label">Room No</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="room_no" placeholder="Room No">
+          </div>
+        </div>
+      <div class="form-group">
+        <label for="clinic" class="col-sm-2 control-label">Clinic</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="roomnumber" placeholder="clinic">
+          </div>
+        </div>
+      <div class="form-group">
+        <label for="date" class="col-sm-2 control-label">Date</label>
+        <div class="col-sm-10">
+          <input type="date" class="form-control" id="date" placeholder="Date">
+          </div>
+        </div>
+      <div class="form-group">
+        <label for="hosp_no" class="col-sm-2 control-label">Hospital No</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="hosp_no" placeholder="Hospital no">
+          </div>
+        </div>
+      <div class="form-group">
+        <label for="receipt_no" class="col-sm-2 control-label">Receipt No</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="receipt_no" placeholder="Receipt No">
+          </div>
+        </div>
+      <div class="form-group">
+        <label for="procedure1" class="col-sm-2 control-label">Procedure 1</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="procedure" placeholder="Procedure 1">
+          </div>
+        </div>
+      <div class="form-group">
+        <label for="local_anesthesia" class="col-sm-2 control-label">Local anesthesia</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="local_anesthesia" placeholder="Local anesthesia">
+          </div>
+        </div>
+      <div class="form-group">
+        <label for="no_of_teeth" class="col-sm-2 control-label">Number of Teeth</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="no_of_teeth" placeholder="Number of Teeth">
+          </div>
+        </div>
+      <div class="form-group">
+        <label for="treated_teeth" class="col-sm-2 control-label">Treated Teeth</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="treated_teeth" placeholder="Treated Teeth">
+          </div>
+        </div>
+      <div class="form-group">
+        <label for="done_by" class="col-sm-2 control-label">Done By</label>
+        <div class="col-sm-10">
+          <input type="type" class="form-control" id="done_by" placeholder="Done By">
+          </div>
+        </div>
+        <div class="form-group">
+        <label for="assisted_by" class="col-sm-2 control-label">Assisted By</label>
+          <div class="col-sm-10">
+            <div class="dropdown">
+              <button class="btn btn-default dropdown-toggle form-control" type="button" id="assisted_by" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Assistant
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                {{#each assistants}}
+                  {{> assistant}}
+                {{/each}}
+              </ul>
+            </div>
+          </div>
+      </div>
+    </form>
+  </div>
+</template>
+
+<template name="helpTab">
+  Help Tab
+</template>
+
+<template name="consultationTab">
+  <div class="tabform consultation-tab">
+    <form class="form" role="form">
+        <div class="form-group">
+            <label class="sr-only" for="inputHospitalNumber">Hospital Number</label>
+            <input type="text" class="form-control" id="inputHospitalNumber" placeholder="Please fill Hosp No">
+        </div>
+        <div class="form-group">
+            <label class="sr-only" for="inputPassword">Date</label>
+            <input type="date" class="form-control" id="inputDate">
+        </div>
+        <div class="checkbox">
+            <label><input type="checkbox"> Remember me</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+    <br>
+    <div class="alert alert-info">
+        <a href="#" class="close" data-dismiss="alert">×</a>
+        <strong>Note:</strong> The inline form layout is rendered as default vertical form layout if the viewport width is less than 768px. Open the output in a new window and resize the screen to see how it works.
+    </div>
+  </div>
+</template>
+
+<template name="consultationlistTab">
+  Consultation List Tab
+</template>
+
+<template name="procedurelistTab">
+  Procedure List Tab
+</template>
+
+<template name="phonenumberlistTab">
+  Phone number list
+</template>
+
+<template name="task">
+  <li>{{text}}</li>
+</template>
+
+<template name="assistant">
+  <li><a href="#">{{name}}</a></li>
+</template>
