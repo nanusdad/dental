@@ -118,7 +118,6 @@
 </template>
 
 <template name="procedureTab">
-
   <div class="tabform procedure-tab">
     <form class="form-horizontal">
       <div class="form-group">
@@ -136,8 +135,8 @@
                 <span class="caret"></span>
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                {{#each assistants}}
-                  {{> assistant}}
+                {{#each clinics}}
+                  {{> clinic}}
                 {{/each}}
               </ul>
             </div>
@@ -170,8 +169,8 @@
                 <span class="caret"></span>
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                {{#each assistants}}
-                  {{> assistant}}
+                {{#each procedures1}}
+                  {{> procedure1}}
                 {{/each}}
               </ul>
             </div>
@@ -186,8 +185,8 @@
                 <span class="caret"></span>
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                {{#each assistants}}
-                  {{> assistant}}
+                {{#each localanesthesias}}
+                  {{> localanesthesia}}
                 {{/each}}
               </ul>
             </div>
@@ -264,8 +263,8 @@
                 <span class="caret"></span>
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                {{#each assistants}}
-                  {{> assistant}}
+                {{#each sexs}}
+                  {{> sex}}
                 {{/each}}
               </ul>
             </div>
@@ -363,8 +362,8 @@
                 <span class="caret"></span>
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                {{#each assistants}}
-                  {{> assistant}}
+                {{#each consulttypes}}
+                  {{> consulttype}}
                 {{/each}}
               </ul>
             </div>
@@ -379,8 +378,8 @@
                 <span class="caret"></span>
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                {{#each assistants}}
-                  {{> assistant}}
+                {{#each roomnos}}
+                  {{> roomno}}
                 {{/each}}
               </ul>
             </div>
@@ -395,8 +394,8 @@
                 <span class="caret"></span>
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                {{#each assistants}}
-                  {{> assistant}}
+                {{#each statuses}}
+                  {{> status}}
                 {{/each}}
               </ul>
             </div>
@@ -423,8 +422,8 @@
                 <span class="caret"></span>
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                {{#each assistants}}
-                  {{> assistant}}
+                {{#each sexs}}
+                  {{> sex}}
                 {{/each}}
               </ul>
             </div>
@@ -479,8 +478,8 @@
                 <span class="caret"></span>
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                {{#each assistants}}
-                  {{> assistant}}
+                {{#each dentalneglectsubtypes}}
+                  {{> dentalneglectsubtype}}
                 {{/each}}
               </ul>
             </div>
@@ -495,8 +494,8 @@
                 <span class="caret"></span>
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                {{#each assistants}}
-                  {{> assistant}}
+                {{#each habitss}}
+                  {{> habits}}
                 {{/each}}
               </ul>
             </div>
@@ -511,8 +510,8 @@
                 <span class="caret"></span>
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                {{#each assistants}}
-                  {{> assistant}}
+                {{#each counsellingdones}}
+                  {{> counsellingdone}}
                 {{/each}}
               </ul>
             </div>
@@ -527,8 +526,8 @@
                 <span class="caret"></span>
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                {{#each assistants}}
-                  {{> assistant}}
+                {{#each interestingcasecategorys}}
+                  {{> interestingcasecategory}}
                 {{/each}}
               </ul>
             </div>
@@ -584,5 +583,38 @@
 </template>
 
 <template name="assistant">
+  <li><a href="#">{{name}}</a></li>
+</template>
+<template name="clinic">
+  <li><a href="#">{{name}}</a></li>
+</template>
+<template name="procedure1">
+  <li><a href="#">{{name}}</a></li>
+</template>
+<template name="localanesthesia">
+  <li><a href="#">{{name}}</a></li>
+</template>
+<template name="sex">
+  <li><a href="#">{{name}}</a></li>
+</template>
+<template name="consulttype">
+  <li><a href="#">{{name}}</a></li>
+</template>
+<template name="roomno">
+  <li><a href="#">{{name}}</a></li>
+</template>
+<template name="dentalneglectsubtype">
+  <li><a href="#">{{name}}</a></li>
+</template>
+<template name="habits">
+  <li><a href="#">{{name}}</a></li>
+</template>
+<template name="counsellingdone">
+  <li><a href="#">{{name}}</a></li>
+</template>
+<template name="interestingcasecategory">
+  <li><a href="#">{{name}}</a></li>
+</template>
+<template name="status">
   <li><a href="#">{{name}}</a></li>
 </template>
