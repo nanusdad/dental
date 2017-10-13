@@ -1,0 +1,257 @@
+<template name="procedureTab">
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="room_no" class="col-sm-2 control-label">Room No</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="room_no" placeholder="Room No">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="name" class="col-sm-2 control-label">Name</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="name" placeholder="Name">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="age" class="col-sm-2 control-label">Age</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="age" placeholder="Age">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="sex" class="col-sm-2 control-label">Sex</label>
+        <div class="col-sm-10">
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle form-control" type="button" id="sex" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Sex
+            <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              {{#each sexs}}
+              {{> sex}}
+              {{/each}}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="clinic" class="col-sm-2 control-label">Clinic</label>
+        <div class="col-sm-10">
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle form-control" type="button" id="clinic" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Clinic
+            <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              {{#each clinics}}
+              {{> clinic}}
+              {{/each}}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="date" class="col-sm-2 control-label">Date</label>
+        <div class="col-sm-10">
+          <input type="date" class="form-control" id="date" placeholder="Date">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="hosp_no" class="col-sm-2 control-label">Hospital No</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="hosp_no" placeholder="Hospital no">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="assisted_by" class="col-sm-2 control-label">Guide</label>
+        <div class="col-sm-10">
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle form-control" type="button" id="guide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Guide
+            <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              {{#each assistants}}
+              {{> assistant}}
+              {{/each}}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="receipt_no" class="col-sm-2 control-label">Receipt No</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="receipt_no" placeholder="Receipt No">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="treated_teeth" class="col-sm-2 control-label">Grade</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="grade" placeholder="Grade">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="supervised_by" class="col-sm-2 control-label">Supervised By</label>
+        <div class="col-sm-10">
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle form-control" type="button" id="supervised_by" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Supervised By
+            <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              {{#each assistants}}
+              {{> assistant}}
+              {{/each}}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="procedure1" class="col-sm-2 control-label">Procedure 1</label>
+        <div class="col-sm-10">
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle form-control" type="button" id="procedure1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Procedure 1
+            <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              {{#each procedures1}}
+              {{> procedure1}}
+              {{/each}}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="local_anesthesia" class="col-sm-2 control-label">Local anesthesia</label>
+        <div class="col-sm-10">
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle form-control" type="button" id="local_anesthesia" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Local anesthesia
+            <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              {{#each localanesthesias}}
+              {{> localanesthesia}}
+              {{/each}}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="comment_learning_points" class="col-sm-2 control-label">Comment / learning points</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="comment_learning_points" placeholder="Comment / learning points">
+          <textarea class="form-control" rows="5" id="comment">Comment / learning points</textarea>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="no_of_teeth" class="col-sm-2 control-label">Number of Teeth</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="no_of_teeth" placeholder="Number of Teeth">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="treated_teeth" class="col-sm-2 control-label">Treated Teeth</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="treated_teeth" placeholder="Treated Teeth">
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="done_by" class="col-sm-2 control-label">Done By</label>
+        <div class="col-sm-10">
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle form-control" type="button" id="done_by" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Done By
+            <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              {{#each assistants}}
+              {{> assistant}}
+              {{/each}}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="assisted_by" class="col-sm-2 control-label">Assisted By</label>
+        <div class="col-sm-10">
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle form-control" type="button" id="assisted_by" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Assistant
+            <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              {{#each assistants}}
+              {{> assistant}}
+              {{/each}}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <div class="checkbox">
+          <label><input type="checkbox">Biohazard</label>
+          <label for="checkbox" class="col-sm-2 control-label"><strong>Biohazard</strong></label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</template>

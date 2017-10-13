@@ -1,0 +1,32 @@
+<template name="procedurelistTab">
+	<div class="table-responsive">
+	  <table class="table">
+	  	<thead>
+	  		<tr>
+	  			<td colspan="" rowspan="" headers="">Name</td>
+	  			<td colspan="" rowspan="" headers="">Hospital No</td>
+	  			<td colspan="" rowspan="" headers="">Procedure Name</td>
+	  			<td colspan="" rowspan="" headers="">Done By</td>
+	  		</tr>
+	  	</thead>
+	  	<tbody>
+	  		  {{#each procedures}}
+          	{{> procedure_list_item}}
+          {{/each}}
+          {{#each assistants}}
+          	{{name}}
+          {{/each}}
+	  		<tr></tr>
+	  	</tbody>
+	  </table>
+	</div>
+</template>
+
+<template name="procedure_list_item">
+	<tr>
+		<td>{{name}}</td>	
+		<td>{{hospital_no}}</td>	
+		<td>{{procedure_name}}</td>	
+		<td>{{done_by}}</td>	
+	</tr>
+</template>
