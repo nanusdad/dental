@@ -1,1 +1,7 @@
-ECHO is on.
+## Getting Started ##
+```shell
+git clone https://github.com/1hf/dental.git
+cd dental/
+npm install
+meteor run
+```
