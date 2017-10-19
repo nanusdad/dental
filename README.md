@@ -1,7 +1,7 @@
 ## Getting Started ##
 ```shell
-git clone https://github.com/1hf/dental.git
-cd dental/
+git clone https://github.com/nanusdad/misdedu.git
+cd misdedu/
 npm install
 meteor run
 ```
